@@ -13,14 +13,17 @@ public class LoopWhile {
         int i = 0;
         int soma=0;
         int media;
+        int qtde;
+        System.out.println("Quantos alunos tem nessa classe ?");
+        qtde = leitor.nextInt();
 
-        while (i < 10) {
+        while (i < qtde) {
             System.out.println("Digite a idade do " + (i+1) + " Aluno:");
             idade = leitor.nextInt();
             soma = soma + idade;
             i = i + 1;
         }
-        media = soma / 10;
+        media = soma / qtde;
         System.out.println("A média de idade dos Alunos são : " + media + " anos");
         leitor.close();
     }
